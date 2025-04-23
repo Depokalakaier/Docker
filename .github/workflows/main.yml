@@ -15,3 +15,7 @@ jobs:
           port: ${{ secrets.PORT }}
           source: "docker-compose.yml,.github/workflows/main.yml"
           target: /home/maksdepowski
+          script: |
+            cd /home/maksdepowski
+            docker-compose down || true
+            docker-compose up -d --build
