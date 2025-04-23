@@ -14,4 +14,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           port: ${{ secrets.PORT }}
           source: "docker-compose.yml,.github/workflows/main.yml"
-          target: /maksdepowski
+          target: /home/maksdepowski
